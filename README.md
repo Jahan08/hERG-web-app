@@ -27,3 +27,21 @@ First step started with gathering structure and coordinates of 4MQS protein
     mv ~/Downloads/4mqs.pdb 4mqs_OPM.pdb
 
 The OPM database provides GPCR structures such that they are pre-aligned for membrane-embedding, and show dummy coordinates as to where the membrane starts and ends.
+
+The OPM database provides GPCR structures such that they are pre-aligned for membrane-embedding, and show dummy coordinates as to where the membrane starts and ends.
+
+This structure of the M2 receptor has chain A, the receptor, and chain B, a G-protein mimetic camelid antibody fragment. It also has the agonist ligand iperoxo. In this case, we will simulation just the M2 receptor (no G-protein or mimetic) with the agonist iperoxo.
+
+Get the raw receptor and ligand pdb files:
+
+        grep ' A ' 4mqs_OPM.pdb > m2_only.pdb
+        grep 'IXO' 4mqs_OPM.pdb > ixo_ligand.pdb
+
+This gives us the un-prepared receptor and ligand coordinates.
+
+# Step 2: Receptor and ligand preparation
+
+We need to prepare the M2 receptor for molecular dynamics with AMBER.  I prepared the structure by using the following workflow:
+
+   * Fill Missing loops/side chains (swiss pdb viewer)
+   * Protonation, side chain tautomer sampling (molprobity), set protonation states at pH 7.4 (propka)
