@@ -15,3 +15,8 @@ Muscarinic acetylcholine receptors (M1–M5) are GPCRs that regulate the activit
 An agonist is a drug that binds to the receptor, producing a similar response to the intended chemical and receptor. Whereas an antagonist is a drug that binds to the receptor either on the primary site, or on another site, which all together stops the receptor from producing a response.
 
 The main difference between these two drugs is that one simulates the intended reaction, where as an antagonist binds to the receptor, and stops/ slows responses.
+
+# Step 1: Starting PDB
+    cd ./files_clean/system_pdb
+    Download OPM file 4MQS: https://opm.phar.umich.edu/proteins/2304
+    mv ~/Downloads/4mqs.pdb 4mqs_OPM.pdb
