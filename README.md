@@ -6,4 +6,6 @@ G protein-coupled receptors (GPCRs) play a major role in intercellular communica
 
 ![Alt text](https://github.com/Jahan08/Amber-tutorial/blob/main/m2_setup.png "M2_IXO")
 
+# Introduction:
 
+This tutorial describes how to construct and simulate a GPCR membrane protein system using AMBER. In this case, we will setup and simulate the agonist bound, active state of the M2 muscarinic receptor, the structure of which was solved in 2013 (10.1038/nature12735). The PDB code is 4MQS - active human M2 muscarinic acetylcholine receptor bound to the agonist iperoxo.
