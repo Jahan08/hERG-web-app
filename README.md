@@ -1,5 +1,7 @@
 # AMBER application : G Protein-coupled receptors (GPCRs)
 
+Conducted by following : https://github.com/callumjd/AMBER-Membrane_protein_tutorial
+
 Tutorial on the setup and simulation of a membrane protein with AMBER Lipid21 and PACKMOL-Memgen
 
 G protein-coupled receptors (GPCRs) play a major role in intercellular communication by binding small diffusible ligands (agonists) at the extracellular surface. Agonist-binding induces a conformational change in the receptor, which results in the binding and activation of heterotrimeric G proteins within the cell.
@@ -17,6 +19,11 @@ An agonist is a drug that binds to the receptor, producing a similar response to
 The main difference between these two drugs is that one simulates the intended reaction, where as an antagonist binds to the receptor, and stops/ slows responses.
 
 # Step 1: Starting PDB
+
+First step started with gathering structure and coordinates of 4MQS protein
+    
     cd ./files_clean/system_pdb
     Download OPM file 4MQS : https://opm.phar.umich.edu/proteins/2304
     mv ~/Downloads/4mqs.pdb 4mqs_OPM.pdb
+
+The OPM database provides GPCR structures such that they are pre-aligned for membrane-embedding, and show dummy coordinates as to where the membrane starts and ends.
