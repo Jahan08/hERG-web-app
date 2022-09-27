@@ -18,5 +18,5 @@ The main difference between these two drugs is that one simulates the intended r
 
 # Step 1: Starting PDB
     cd ./files_clean/system_pdb
-    Download OPM file 4MQS: https://opm.phar.umich.edu/proteins/2304
+    Download OPM file 4MQS : https://opm.phar.umich.edu/proteins/2304
     mv ~/Downloads/4mqs.pdb 4mqs_OPM.pdb
